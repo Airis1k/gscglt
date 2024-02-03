@@ -2,7 +2,7 @@ import Logo from "../../assets/logo.png";
 import PhoneSVG from "../../assets/phone.svg";
 import MapSVG from "../../assets/map.svg";
 import EmailSVG from "../../assets/email.svg";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import "../../assets/home.scss";
 
 export default function Home() {
@@ -13,7 +13,9 @@ export default function Home() {
                <div className="content">
                   <div className="logo-container">
                      <div className="inner-logo-container">
-                        <img src={Logo} alt="logo" id="company-logo" />
+                        <Link to="/">
+                           <img src={Logo} alt="logo" id="company-logo" />
+                        </Link>
                      </div>
                      <div className="inner-header-container">
                         <h1>Globos centras Šv Gertrūda</h1>
@@ -36,7 +38,7 @@ export default function Home() {
                            </div>
                            <div className="info-wrap">
                               <span className="text">Adresas</span>
-                              <a href="https://www.google.com/maps/search/?api=1&query=Garliava">
+                              <a href="https://www.google.com/maps/search/?api=1&query=Garliava" target="blank">
                                  Kaunas, Garliava
                               </a>
                            </div>
